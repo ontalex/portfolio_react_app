@@ -1,0 +1,26 @@
+.skills_card {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--light_bg);
+    border-radius: 10px;
+    gap: 20px;
+    transition: transform ease;
+}
+
+.skills_card img {
+    width: calc(var(--index) * 5);
+    height: calc(var(--index) * 5);
+}
+
+.skills_card p {
+    margin: 16px 0 0 0;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    color: #ffffff;
+}

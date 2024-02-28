@@ -1,0 +1,11 @@
+.skills_error {
+        color: var(--mark_text);
+}
+
+.skills_loading {
+
+}
+
+.skills_status {
+        color: var(--text_color);
+}

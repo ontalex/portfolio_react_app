@@ -1,0 +1,20 @@
+.skillicon {
+        --size: calc(var(--index) * 1.6);
+        --trans: padding .3s ease;
+
+        width: var(--size);
+        height: var(--size);
+
+        padding: 1px;
+
+        transition: var(--trans);
+        -o-transition: var(--trans);
+        -moz-transition: var(--trans);
+        -webkit-transition: var(--trans);
+
+        position: relative;
+}
+
+.skillicon:hover {
+        padding: 0px;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://ontalex.github.io/p/general_lib/normaliz.css" />
+  <link rel="shortcut icon" href="pic/icons/logo.svg" type="image/x-icon" />
+  <title>Портфолио Алексея Борисова (ontalex)</title>
+</head>
+
+<body>
+  <header>
+    <div class="wrapper wrapper--header">
+      <img class="header_logo" src="pic/icons/logo_me.svg" alt="логотип страницы" />
+      <menu class="header_menu">
+        <a class="header_item" href="#about">
+          <span class="header_item--text">Про меня</span>
+        </a>
+        <a class="header_item" href="#skills">
+          <span class="header_item--text">Навыки</span>
+        </a>
+        <a class="header_item" href="#projects">
+          <span class="header_item--text">Работы</span>
+        </a>
+        <a class="header_item" href="#contacts">
+          <span class="header_item--text">Контакты</span>
+        </a>
+      </menu>
+      <button class="header_button" id="header_button">
+
+        <div class="button_line button_line--top"></div>
+        <div class="button_line button_line--center"></div>
+        <div class="button_line button_line--button"></div>
+
+      </button>
+    </div>
+    <menu class="menu_box menu_box--hidden">
+      <!--Прописать эту секцию в стилях-->
+      <a class="menu_link" href="#about">
+        <span class="menu_box--text">Про меня</span>
+      </a>
+      <a class="menu_link" href="#skills">
+        <span class="menu_box--text">Навыки</span>
+      </a>
+      <a class="menu_link" href="#projects">
+        <span class="menu_box--text">Работы</span>
+      </a>
+      <a class="menu_link" href="#contacts">
+        <span class="menu_box--text">Контакты</span>
+      </a>
+    </menu>
+  </header>
+  <div class="hello" id="about">
+    <div class="hello_text">
+      <h1 class="hello_name">Алексей&nbsp;Борисов</h1>
+      <h2 class="hello_profession">Frontend-разработчик</h2>
+      <p class="hello_description">
+        Frontend-разработчик, в совершенстве владеющий основами своей профессии и жаждущий новых знаний и инновационных идей.
+      </p>
+    </div>
+    <div class="hello_baner">
+      <div class="hello_boxCode">
+        <!-- <pre class="hello_code" lang="javascript">
+          let button_menu = document.querySelector(".header_button");
+          let float_menu  = document.querySelector(".header_menu--float");
+
+          let line_top   = document.querySelector(".header_button_line--top");
+          let line_under = document.querySelector(".header_button_line--bottom");
+
+          button_menu.isSelected = false;
+
+          function addEffectWriting(element, time) {
+            let element_array = element.innerText.split("");
+
+            element.count     = 0;
+            element.innerText = "";
+
+            function writeSymbols() {
+              element.innerText += element_array[element.count];
+              element.count++;
+
+              if (element.count <= element_array.length) {
+                setTimeout(() => {
+                  writeSymbols();
+                }, time);
+              } else if (element.count >= element_array.length) {
+                element.count     = 0;
+                element.innerText = "";
+
+                writeSymbols();
+              }
+            }
+            writeSymbols();
+          }</pre> -->
+      </div>
+      <div class="hello_pic">
+        <div class="hello_anim hello_pic--lavel hello_pic--lavel1"></div>
+        <div class="hello_anim hello_pic--lavel hello_pic--lavel2"></div>
+        <div class="hello_anim hello_pic--lavel hello_pic--lavel3"></div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="about">
+      <div class="wrapper wrapper--about">
+        <img class="about_logo" src="pic/icons/logo_min.svg" alt="" />
+        <p class="about_text">
+          Несколько лет назад у меня появился интерес к разработке веб-сайтов и пользовательских интерфейсов. С тех пор
+          я стремлюсь постоянно совершенствовать свои навыки. В настоящее время я разрабатываю веб-сайты и
+          веб-приложения как для собственного удовольствия, так и могу выполнять заказы на их разработку.
+        </p>
+      </div>
+    </div>
+    <div class="skills">
+      <h1 class="skills_header" id="skills">Мои навыки</h1>
+      <div class="skills_line" id="skills_list"></div>
+    </div>
+    <div class="portfolio" id="projects">
+      <h1 class="portfolio_header">Мои работы</h1>
+      <div class="portfolio_line" id="projects_list"></div>
+    </div>
+  </main>
+  <footer class="footer" id="contacts">
+    <div class="footer_about">
+      <p class="footer_description">Если вам понравились мои работы и умения, я всегда готов пообщаться с вами и обсудить возможное сотрудничество. :)</p>
+    </div>
+    <div class="footer_contacts">
+      <h1 class="footer_header">Контакты</h1>
+      <ul class="footer_list">
+        <li class="footer_item">
+          <img class="footer_icon" src="pic/icons/icon_mail.svg" alt="">
+          <a class="footer_link" href="mailto:ontalex@ya.ru">ontalex@ya.ru</a>
+        </li>
+        <li class="footer_item">
+          <img class="footer_icon" src="pic/icons/icon_vk.svg" alt="">
+          <a class="footer_link" href="https://vk.com/ontalex">@ontalex</a>
+        </li>
+        <li class="footer_item">
+          <img class="footer_icon" src="pic/icons/icon_github.svg" alt="">
+          <a class="footer_link" href="https://github.com/ontalex">Ontalex</a>
+        </li>
+        <li class="footer_item">
+          <img class="footer_icon" src="pic/icons/icon_figma.svg" alt="">
+          <a class="footer_link" href="https://figma.com/@ontalex">Ontalex</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+<script type="module" src="./src/main.jsx"></script>
+<script src="main.js"></script>
+<script src="https://animejs.com/lib/anime.min.js"></script>
+
+</html>

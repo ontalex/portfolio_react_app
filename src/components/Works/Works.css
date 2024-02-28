@@ -1,0 +1,11 @@
+.works_error {
+        color: var(--mark_text);
+}
+
+.works_loading {
+
+}
+
+.works_status {
+        color: var(--text_color);
+}
